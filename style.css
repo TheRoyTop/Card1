@@ -1,0 +1,122 @@
+:root{
+  --Dark-Blue: hsl(233, 47%, 7%);
+  --Dark-Card: hsl(244, 38%, 16%);
+  --Violet-Filter: hsl(277, 64%, 61%);
+  --White-Name: hsl(0, 0%, 100%);
+  --White-Number: hsla(0, 0%, 100%, 0.75);
+  --White-Text: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  margin: 100px;
+    font-size: 15px;
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.Img-Container{
+  display: inline-block;
+  background-color: var(--Violet-Filter);
+  height: 400px;
+}
+.Portada{
+  height: 400px;
+  width: 400px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+}
+.Card-Text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Dark-Card);
+  height: 400px;
+  width: 400px;
+}
+.Name{
+  color: var(--White-Name);
+  font-weight: bold;
+  font-size: 30px ;
+  margin: 60px 35px 0 35px;
+  
+}
+.span-color{
+  color: darkviolet;
+  
+}
+p{
+  color: var(--White-Text);
+  font-size: 15px;
+  margin: 40px 20px 15px 20px;
+}
+ 
+.Name-Category{
+  color: var(--White-Name);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.Cont-Number{
+  display: flex;
+  width: 90%;
+  padding-top: 30px;
+}
+.Category{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.Name-Sub{
+  margin-top: 10px;
+}
+
+
+@media (max-width: 700px ) {
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+ .Img-Container{
+   order: 1;
+   height: 200px;
+   border-radius: 10px 10px 0 0;
+ }
+
+.Portada{
+  width: 300px;
+  height: 200px;
+}
+.Card-Text{
+  order: 2;
+  height: 320px;
+  width: 300px;
+  padding-bottom: 100px;
+  border-radius: 0 0 10px 10px;
+}
+.Cont-Number{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.Name{
+  display: flex;
+  margin: 20px 0 0 0;
+  font-size: 24px ;
+  flex-direction:  column;
+  align-items: center;
+  width: 300px;
+}
+.P-Text{
+  display: flex;
+ margin: 20px 5px 0 5px;
+  font-size: 13px;
+}
+.Name-Category{
+  margin-top: 10px;
+}
+}
